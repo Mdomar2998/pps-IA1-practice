@@ -54,4 +54,4 @@ output (c=4) at p1original.c:13
 main () at p1original.c:22
 22  }
 (gdb) Quit
-(gdb) 
+(gdb) .
