@@ -1,12 +1,37 @@
-#include<stdio.h>
+   #include<stdio.h>
 int input()
 {
-  printf("enter a number\n");
+  int a;
+  printf("enter the  number\n");
   scanf("%d",&a);
   return a;
 }
 int cmp(int a,int b,int c)
 {
   if(a>b && a>c)
-  retu
+  {
+  return a;
+  }
+  else if((b>c)&&(b>a))
+  {
+  return b;
+  }
+  else
+  {
+  return c;
+  }
+}
+int output(int a,int b,int c,int large)
+{
+  printf("large is %d",large);
+}
+int main()
+{
+  int x,y,z,large;
+  x=input();
+  y=input();
+  z=input();
+  large=cmp(x,y,z);
+  output(x,y,z,large);
+  return 0;
 }
